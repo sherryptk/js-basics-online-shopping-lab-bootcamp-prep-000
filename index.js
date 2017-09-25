@@ -62,11 +62,13 @@ function removeFromCart(item) {
   var count
     for (var i = 0; i < cart.length; i++) {
       if (!(cart[i]).hasOwnProperty(item)) {
-        count++}
-        if (count===cart.length) {
-          console.log('That item is not in your cart.')
+        count++
+      }
+      
+      }
+      if (count===cart.length) {
+        console.log('That item is not in your cart.')
 
-        }
       }
 
     }
