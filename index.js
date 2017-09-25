@@ -70,7 +70,10 @@ function placeOrder(cardNumber) {
   }
   else {
     //var total=0
-    var total= total()
+    var total=0
+    for (var i = 0; i < cart.length; i++) {
+      total=total+cart[i][Object.keys(cart[i])]
+    }
     console.log("Your total cost is $" + total + ", which will be charged to the card " + cardNumber + ".")
     cart=[]
   }
