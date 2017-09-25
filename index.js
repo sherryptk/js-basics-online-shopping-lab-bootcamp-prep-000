@@ -51,35 +51,36 @@ function total() {
   return total
 }
 
+// function removeFromCart(item) {
+//   for (var i = 0; i < cart.length; i++) {
+//     if ((cart[i]).hasOwnProperty(item)) {
+//       cart.splice(i, 1)
+//       return cart
+//     }
+//   }
+// 
+//   var count =0
+//     for (var i = 0; i < cart.length; i++) {
+//       if (!(cart[i]).hasOwnProperty(item)) {
+//         count++
+//       }
+// }
+//       if (count===cart.length) {
+//         console.log('That item is not in your cart.')
+//       }
+// }
+
 function removeFromCart(item) {
-  for (var i = 0; i < cart.length; i++) {
-    if ((cart[i]).hasOwnProperty(item)) {
-      cart.splice(i, 1)
+  for (let i = 0; i < cart.length; i++) {
+    if (cart[i].hasOwnProperty(item)) {
+      cart.splice(i, 1);
       return cart
     }
   }
+  console.log(`That item is not in your cart.`)
+  return cart
+}
 
-  var count =0
-    for (var i = 0; i < cart.length; i++) {
-      if (!(cart[i]).hasOwnProperty(item)) {
-        count++
-      }
-
-      }
-      if (count===cart.length) {
-        console.log('That item is not in your cart.')
-
-      }
-
-    }
-
-
-// The removeFromCart() function accepts one argument, the name of the item that should be removed.
-// If the cart does not contain a matching item, the function should print out That item is not in your cart. and
-// return the unchanged cart.
-// If the item is present in the cart, the function should remove the object from the cart and then return the updated cart.
-// HINT: Check each object's key (the name of the item) to see if it matches the parameter, then remove it if it matches.
-// You might find hasOwnProperty to be useful.
 
 function placeOrder(cardNumber) {
   // write your code here
