@@ -57,6 +57,7 @@ function removeFromCart(item) {
       cart.splice(i, 1)
       return cart
     }
+  }
     for (var i = 0; i < cart.length; i++) {
       if (!(cart[i]).hasOwnProperty(item)) {
         var count++
@@ -68,7 +69,7 @@ function removeFromCart(item) {
 
     }
 
-  }
+  
 }
 
 // The removeFromCart() function accepts one argument, the name of the item that should be removed.
