@@ -51,25 +51,6 @@ function total() {
   return total
 }
 
-// function removeFromCart(item) {
-//   for (var i = 0; i < cart.length; i++) {
-//     if ((cart[i]).hasOwnProperty(item)) {
-//       cart.splice(i, 1)
-//       return cart
-//     }
-//   }
-//
-//   var count =0
-//     for (var i = 0; i < cart.length; i++) {
-//       if (!(cart[i]).hasOwnProperty(item)) {
-//         count++
-//       }
-// }
-//       if (count===cart.length) {
-//         console.log('That item is not in your cart.')
-//       }
-// }
-
 function removeFromCart(item) {
   for (let i = 0; i < cart.length; i++) {
     if (cart[i].hasOwnProperty(item)) {
