@@ -66,10 +66,10 @@ function removeFromCart(item) {
       }
 
       }
-      // if (count===cart.length) {
-      //   console.log('That item is not in your cart.')
-      //
-      // }
+      if (count===cart.length) {
+        console.log('That item is not in your cart.')
+      
+      }
 
     }
 
