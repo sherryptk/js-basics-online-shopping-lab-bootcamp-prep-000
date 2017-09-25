@@ -58,7 +58,7 @@ function total() {
 //       return cart
 //     }
 //   }
-// 
+//
 //   var count =0
 //     for (var i = 0; i < cart.length; i++) {
 //       if (!(cart[i]).hasOwnProperty(item)) {
