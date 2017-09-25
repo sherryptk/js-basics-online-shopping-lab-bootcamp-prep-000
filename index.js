@@ -52,12 +52,9 @@ function total() {
 }
 
 function removeFromCart(item) {
-  // write your code here
   for (var i = 0; i < cart.length; i++) {
-console.log(Object.keys(cart[i]))
     if (Object.keys(cart[i]).hasOwnProperty(item)) {
-      var removed =[]
-      removed=cart.splice(i, 1)
+      cart.splice(i, 1)
       return cart
       // delete cart.item
       // return cart
