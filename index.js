@@ -69,7 +69,7 @@ function removeFromCart(item) {
 
     }
 
-  
+
 }
 
 // The removeFromCart() function accepts one argument, the name of the item that should be removed.
