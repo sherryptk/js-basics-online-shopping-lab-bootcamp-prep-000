@@ -64,7 +64,7 @@ function removeFromCart(item) {
       if (!(cart[i]).hasOwnProperty(item)) {
         count++
       }
-      
+
       }
       if (count===cart.length) {
         console.log('That item is not in your cart.')
