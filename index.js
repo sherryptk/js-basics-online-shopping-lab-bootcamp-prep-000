@@ -59,7 +59,7 @@ function removeFromCart(item) {
     }
   }
 
-  var count 
+  var count
     for (var i = 0; i < cart.length; i++) {
       if (!(cart[i]).hasOwnProperty(item)) {
         count++}
